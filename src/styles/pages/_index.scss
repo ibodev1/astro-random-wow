@@ -2,13 +2,13 @@ main {
   @apply container flex items-center justify-center;
 }
 .movie {
-  @apply grid grid-cols-12 auto-rows-auto gap-7 w-3/4 h-3/4 overflow-hidden p-4 rounded-lg shadow-2xl border border-white relative;
+  @apply grid grid-cols-12 auto-rows-auto gap-7 w-[95%] my-10 lg:my-0 lg:w-3/4 h-3/4 overflow-hidden p-4 rounded-lg shadow-2xl border border-white relative;
   background: #000046;
   background: -webkit-linear-gradient(to bottom right, #1cb5e0, #000046);
   background: linear-gradient(to bottom right, #1cb5e0, #000046);
 
   &-left {
-    @apply col-span-4 flex items-start justify-start flex-col w-full flex-1;
+    @apply col-span-12 lg:col-span-4 flex items-start justify-start flex-col w-full flex-1;
 
     .poster {
       @apply w-[100%] h-full rounded-lg overflow-hidden shadow-lg;
@@ -39,7 +39,7 @@ main {
   }
 
   &-right {
-    @apply col-span-8;
+    @apply col-span-12 lg:col-span-8 mb-10 lg:mb-0;
 
     .video-info {
         @apply text-white font-semibold text-center mt-7;

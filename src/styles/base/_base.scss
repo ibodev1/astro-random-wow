@@ -4,6 +4,6 @@
   }
 
   body {
-    @apply w-full h-screen flex items-center justify-center;
+    @apply w-full h-auto lg:h-screen flex items-center justify-center;
   }
 }
