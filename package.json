@@ -1,0 +1,26 @@
+{
+  "name": "astro-random-wow",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.7.0",
+    "@astrojs/tailwind": "^2.0.1",
+    "@astrojs/vercel": "^2.0.0",
+    "astro": "^1.2.7",
+    "autoprefixer": "^10.4.11",
+    "axios": "^0.27.2",
+    "cssnano": "^5.1.13",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "sass": "^1.54.9"
+  }
+}

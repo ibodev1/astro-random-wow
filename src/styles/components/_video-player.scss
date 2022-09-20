@@ -1,0 +1,7 @@
+.movie-video {
+    @apply w-full h-auto flex-1;
+
+    video {
+        @apply w-full rounded-lg overflow-hidden aspect-video;
+    }
+}

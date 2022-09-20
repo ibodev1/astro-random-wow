@@ -1,0 +1,60 @@
+main {
+  @apply container flex items-center justify-center;
+}
+.movie {
+  @apply grid grid-cols-12 auto-rows-auto gap-7 w-3/4 h-3/4 overflow-hidden p-4 rounded-lg shadow-2xl border border-white relative;
+  background: #000046;
+  background: -webkit-linear-gradient(to bottom right, #1cb5e0, #000046);
+  background: linear-gradient(to bottom right, #1cb5e0, #000046);
+
+  &-left {
+    @apply col-span-4 flex items-start justify-start flex-col w-full flex-1;
+
+    .poster {
+      @apply w-[100%] h-full rounded-lg overflow-hidden shadow-lg;
+
+      img {
+        @apply object-cover w-full h-full;
+      }
+    }
+
+    .movie-info {
+      @apply mt-5 w-full h-auto flex-1 flex items-start justify-center flex-col;
+
+      h1 {
+        @apply text-2xl font-bold text-white capitalize;
+      }
+
+      ul {
+        @apply text-white opacity-90;
+
+        li {
+          @apply capitalize;
+          span {
+            @apply font-bold;
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    @apply col-span-8;
+
+    .video-info {
+        @apply text-white font-semibold text-center mt-7;
+
+        h2 {
+            @apply text-2xl break-words;
+        }
+
+        h3 {
+            @apply text-lg opacity-90;
+        }
+    }
+  }
+
+  a {
+    @apply opacity-50 no-underline text-white absolute bottom-5 right-5;
+  }
+}

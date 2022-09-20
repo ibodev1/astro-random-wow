@@ -1,0 +1,9 @@
+@layer base {
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    @apply w-full h-screen flex items-center justify-center;
+  }
+}

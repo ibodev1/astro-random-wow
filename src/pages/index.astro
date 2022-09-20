@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import axios from "axios";
+import { Image } from "@astrojs/image/components";
+import VideoPlayer from "../components/VideoPlayer.astro";
+
+const { data } = await axios.get(
+  "https://owen-wilson-wow-api.herokuapp.com/wows/random"
+);
+---
+
+<Layout title={data[0].movie + " - github.com/ibodev1"}>
+  <main>
+    <div class="movie">
+      <div class="movie-left">
+        <div class="poster">
+          <Image
+            src={data[0].poster}
+            width={1280}
+            height={1920}
+            alt={data[0].movie}
+          />
+        </div>
+        <div class="movie-info">
+          <h1>Movie Info</h1>
+          <ul>
+            <li><span>Name :</span> {data[0].movie}</li>
+            <li><span>Year :</span> {data[0].year}</li>
+            <li><span>Duration :</span> {data[0].movie_duration}</li>
+            <li><span>Director :</span> {data[0].director}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="movie-right">
+        <div class="movie-video">
+          <VideoPlayer src={data[0].video["1080p"]} />
+        </div>
+        <div class="video-info">
+          <h2><span>"</span>{data[0].full_line} <span>" - {data[0].character}</span></h2>
+          <h3>{data[0].timestamp} / {data[0].movie_duration}</h3>
+        </div>
+      </div>
+      <a href="https://github.com/ibodev1" target="_blank" rel="noopener noreferrer">github.com/ibodev1</a>
+    </div>
+  </main>
+</Layout>
