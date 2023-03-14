@@ -6,6 +6,6 @@
 
 ## 👀 Api?
 
-> URL: [https://owen-wilson-wow-api.herokuapp.com/](https://owen-wilson-wow-api.herokuapp.com/)
+> URL: [https://owen-wilson-wow-api.onrender.com/](https://owen-wilson-wow-api.onrender.com/)
 
 owen-wilson-wow-api.herokuapp.com is a free JSON API for actor Owen Wilson's "wow" exclamations in movies.
